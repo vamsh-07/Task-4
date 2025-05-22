@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"/>
+
+        <Spinner
+            android:id="@+id/spinnerPayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiParticipants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Participants (comma-separated)"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btnAddBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Bill"/>
+
+    </LinearLayout>
+</ScrollView>
